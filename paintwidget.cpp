@@ -13,6 +13,7 @@ PaintWidget::PaintWidget(QWidget *parent) : QWidget(parent) {
   AddToTimerInterval(1000);
 
   int positionYDivider = 2;
+  windowRect_ = rect();
   ellipsePosition_ =
       QPoint(windowRect_.x(), windowRect_.height() / positionYDivider);
 
